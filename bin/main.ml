@@ -12,4 +12,7 @@ let () =
   print_string "at func: ";
   Ex3.at arr 2 |> Option.get |> print_int;
   print_newline ();
+  print_string "length func: ";
+  Ex4.length arr |> print_int;
+  print_newline ();
   ()
