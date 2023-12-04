@@ -5,4 +5,7 @@ let () =
   Ex2.last_two arr |> Option.get |> fun t ->
   print_int (fst t);
   print_int (snd t);
-  print_newline ()
+  print_newline ();
+  Ex3.at arr 2 |> Option.get |> print_int;
+  print_newline ();
+  ()
