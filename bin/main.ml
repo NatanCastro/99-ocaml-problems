@@ -1,5 +1,17 @@
+let rec for_each f l =
+  match l with
+  | [] -> ()
+  | h :: tl ->
+      f h;
+      for_each f tl
+
+let print_ints l = for_each (fun i -> Printf.printf "%d " i) l
+
 let () =
   let arr = [ 1; 2; 3; 4; 5 ] in
+  print_string "data: ";
+  print_ints arr;
+  print_newline ();
   print_string "last func: ";
   Ex1.last arr |> Option.get |> print_int;
   print_newline ();
