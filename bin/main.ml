@@ -33,4 +33,8 @@ let () =
   print_string "is palindrome func: ";
   (Ex6.is_palindrome arr |> fun b -> Printf.printf "%b" b);
   print_newline ();
+  print_string "flatten func: ";
+  Ex7.flatten [ One 1; Many [ One 1; Many [ One 3; One 1 ]; One 1 ] ]
+  |> print_ints;
+  print_newline ();
   ()
