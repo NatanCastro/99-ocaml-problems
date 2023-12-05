@@ -30,4 +30,7 @@ let () =
   print_string "reverse func: ";
   Ex5.rev arr |> print_ints;
   print_newline ();
+  print_string "is palindrome func: ";
+  (Ex6.is_palindrome arr |> fun b -> Printf.printf "%b" b);
+  print_newline ();
   ()
