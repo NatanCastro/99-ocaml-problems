@@ -27,4 +27,7 @@ let () =
   print_string "length func: ";
   Ex4.length arr |> print_int;
   print_newline ();
+  print_string "reverse func: ";
+  Ex5.rev arr |> print_ints;
+  print_newline ();
   ()
